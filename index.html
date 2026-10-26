@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Esbeydi 💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe4ef, #fff5f8, #ffc6dc);
+      color: #87445e;
+      overflow-x: hidden;
+    }
+
+    .hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: #f18bb4;
+      animation: float 10s linear infinite;
+      opacity: 0.65;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+      15% { opacity: 0.65; }
+      100% {
+        transform: translateY(-115vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(92%, 720px);
+      margin: auto;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 9px 18px;
+      border: 1px solid #f5b4cc;
+      border-radius: 30px;
+      background: #ffffffa8;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #bd6388;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(55px, 12vw, 88px);
+      color: #d94f88;
+      margin: 18px 0 0;
+      text-shadow: 2px 4px 15px #e98bb633;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-top: 4px;
+      color: #a66b82;
+    }
+
+    .big-heart {
+      font-size: 70px;
+      margin: 22px 0;
+      animation: heartbeat 1.7s infinite;
+      filter: drop-shadow(0 5px 10px #e98bb655);
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      15% { transform: scale(1.12); }
+      30% { transform: scale(1); }
+      45% { transform: scale(1.08); }
+    }
+
+    .card {
+      background: #ffffffc9;
+      border: 1px solid #ffffff;
+      border-radius: 28px;
+      padding: clamp(23px, 6vw, 42px);
+      box-shadow: 0 15px 45px #c95c8520;
+      backdrop-filter: blur(10px);
+      text-align: left;
+    }
+
+    .card h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 35px;
+      color: #d94f88;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 2;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+
+    .highlight {
+      color: #d94f88;
+      font-weight: 600;
+    }
+
+    .quote {
+      margin: 25px 0;
+      padding: 18px;
+      background: #fff0f6;
+      border-left: 3px solid #eb85ae;
+      border-radius: 0 15px 15px 0;
+      font-family: 'Dancing Script', cursive;
+      font-size: 26px;
+      text-align: center;
+      color: #c64f80;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 0;
+      border: none;
+      border-radius: 30px;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #f28bb4, #dc568c);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 7px 20px #d94f8833;
+      transition: transform .25s;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    #surprise {
+      display: none;
+      text-align: center;
+      margin-top: 25px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 31px;
+      color: #d94f88;
+      line-height: 1.6;
+      animation: appear .8s ease;
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .footer {
+      padding: 28px 0 10px;
+      font-size: 12px;
+      color: #a66b82;
+      line-height: 2;
+    }
+
+    .signature {
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      color: #d94f88;
+    }
+
+    .flowers {
+      font-size: 24px;
+      margin: 18px 0;
+      letter-spacing: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hearts" id="hearts"></div>
+
+  <main>
+    <div class="tag">♡ ALGO BONITO PARA TI ♡</div>
+
+    <h1>Esbeydi</h1>
+    <p class="subtitle">Una personita que se ha vuelto especial 💗</p>
+
+    <div class="big-heart">💗</div>
+
+    <section class="card">
+      <h2>Quiero decirte algo...</h2>
+
+      <p>
+        Tal vez llevamos poquito tiempo conociéndonos,
+        pero es increíble cómo, en tan poco tiempo,
+        <span class="highlight">te has vuelto alguien muy especial para mí.</span>
+      </p>
+
+      <p>
+        Quiero que sepas que me pareces una niña demasiado bonita,
+        no solamente por fuera, sino también por esa personita
+        que poco a poco quiero descubrir. Me gustaría conocer
+        tus gustos, tus sueños, tus miedos, tus días buenos
+        y también aquellos en los que no todo salga bien.
+      </p>
+
+      <p>
+        Sé que has pasado por cosas que quizá todavía duelen,
+        y no quiero que sientas que tienes que apresurarte
+        conmigo. No quiero presionarte ni pedirte que confíes
+        de un día para otro. Quiero que todo se dé naturalmente,
+        que el tiempo nos permita conocernos de verdad
+        y que cada paso que demos sea porque los dos lo sentimos.
+      </p>
+
+      <p>
+        Pero también quiero ser sincero contigo:
+        <span class="highlight">sí me gustas, y tengo muchas ganas
+        de conocerte mucho más.</span> Quiero tener detalles contigo,
+        hacerte sonreír cuando tengas un mal día, escucharte
+        cuando necesites hablar y demostrarte con hechos
+        que mereces cosas bonitas.
+      </p>
+
+      <p>
+        Me gustaría tratarte como una princesa, cuidarte,
+        respetarte, hacerte sentir querida y recordarte lo hermosa
+        que eres, incluso en esos días en los que tú no puedas verlo.
+        No porque quiera prometerte un cuento de hadas,
+        sino porque quiero que mis acciones te hagan sentir
+        lo importante que puedes llegar a ser para mí.
+      </p>
+
+      <div class="quote">
+        "Sin prisas, sin presiones, pero con todas las ganas
+        de que algún día podamos escribir una historia muy bonita."
+      </div>
+
+      <p>
+        No sé qué nos tenga preparado el tiempo, y tampoco quiero
+        adelantarme a las cosas. Lo que sí sé es que me gustaría
+        seguir coincidiendo contigo, compartir momentos,
+        crear recuerdos y conocerte tan bien que un día podamos
+        mirar atrás y sonreír por cómo comenzó todo.
+      </p>
+
+      <p>
+        Y si la vida nos da la oportunidad, quiero poner de mi parte
+        para llegar a ser ese hombre que te dé tranquilidad,
+        confianza, amor y razones para volver a creer.
+        <span class="highlight">No tengo prisa por ser alguien
+        en tu vida; quiero ganarme ese lugar bonito en tu corazón.</span>
+      </p>
+
+      <p>
+        Porque sí, Esbeydi, aunque apenas estemos comenzando,
+        no te voy a mentir: me ilusiona pensar que algún día
+        podría ser el amor de tu vida, así como tú podrías
+        convertirte en alguien inolvidable para mí.
+      </p>
+
+      <p>
+        Gracias por permitirme conocerte un poquito.
+        Espero que esto sea apenas el comienzo de algo muy bonito. 💕
+      </p>
+
+      <div class="flowers">🌷 🌸 🌷</div>
+
+      <button class="button" onclick="showSurprise()">
+        Tengo algo más que decirte 💌
+      </button>
+
+      <div id="surprise">
+        No quiero correr para llegar a tu corazón...
+        <br>
+        quiero caminar contigo hasta encontrar el momento correcto.
+        <br><br>
+        Y si algún día me eliges,
+        <br>
+        quiero hacerte la niña más feliz. 💗
+        <br><br>
+        <span style="font-size:23px">Con mucho cariño, alguien que quiere conocerte más.</span>
+      </div>
+    </section>
+
+    <div class="footer">
+      Hecho especialmente para ti, Esbeydi
+      <div class="signature">Con cariño ♡</div>
+      <p>Porque las cosas bonitas también merecen su tiempo.</p>
+    </div>
+  </main>
+
+  <script>
+    const hearts = document.getElementById('hearts');
+
+    for (let i = 0; i < 24; i++) {
+      const heart = document.createElement('span');
+      heart.className = 'heart';
+      heart.textContent = ['♡', '♥️', '💕', '💗'][i % 4];
+      heart.style.left = Math.random() * 100 + '%';
+      heart.style.animationDuration = (7 + Math.random() * 9) + 's';
+      heart.style.animationDelay = (Math.random() * 10) + 's';
+      heart.style.fontSize = (15 + Math.random() * 20) + 'px';
+      hearts.appendChild(heart);
+    }
+
+    function showSurprise() {
+      const surprise = document.getElementById('surprise');
+      surprise.style.display = 'block';
+      surprise.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+  </script>
+</body>
+</html>
